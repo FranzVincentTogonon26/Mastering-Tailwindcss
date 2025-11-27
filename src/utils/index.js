@@ -14,6 +14,12 @@ import card3 from "/assets/images/card3.jpg";
 import iphone_air from "/assets/images/iphone_air.png";
 import iphone_17_pro from "/assets/images/iphone_17_pro.png";
 
+import camera_iphone_pro from "/assets/images/camerIphone17Pro.png";
+import camera_iphone_air from "/assets/images/camerIphoneAir.png";
+import chipIcon from "/assets/images/chipIcon.png";
+import batteryIcon from "/assets/images/batteryIcon.png";
+import AI_icon from "/assets/images/AI_icon.png";
+
 
 export const appleLogo = apple;
 export const appleSearch = search;
@@ -26,3 +32,8 @@ export const isCard2 = card2;
 export const isCard3 = card3;
 export const isIphoneAir = iphone_air;
 export const isIphone17Pro = iphone_17_pro;
+export const isCameraIphonePro = camera_iphone_pro;
+export const isCameraIphoneAir = camera_iphone_air;
+export const isChipIcon = chipIcon;
+export const isBatteryIcon = batteryIcon;
+export const isAIicon = AI_icon;

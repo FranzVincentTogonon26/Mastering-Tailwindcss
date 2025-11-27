@@ -74,7 +74,7 @@ body {
     @apply text-white w-full overflow-hidden relative bg-[#1d1d1f] h-[850px] font-sans ;
 
     .highlightsContainer {
-        @apply max-w-7xl  mx-auto mt-25  px-15 max-md:px-25 max-md:mt-10 max-sm:px-10
+         @apply max-w-7xl  mx-auto lg:mt-38 md:mt-25 max-sm:mt-20 sm:mt-20  px-15 max-md:px-25 max-md:mt-10 max-sm:px-10
     }
 
     .highlightsLabel {
@@ -96,7 +96,7 @@ body {
     @apply text-black w-full overflow-hidden relative font-sans bg-[#f5f5f7] h-[880px];
 
     .shopContainer {
-        @apply max-w-7xl  mx-auto mt-25  px-15 max-md:px-25 max-md:mt-10 max-sm:px-10
+        @apply max-w-7xl  mx-auto lg:mt-38 md:mt-25 max-sm:mt-20 sm:mt-20  px-15 max-md:px-25 max-md:mt-10 max-sm:px-10
     }
 
     .shopLabel {
@@ -113,7 +113,7 @@ body {
     }
 
     .shopContent {
-        @apply flex flex-row flex-3 mx-auto  mt-10 gap-8  w-fit
+        @apply flex flex-row flex-3 mx-auto  mt-10 gap-8  w-fit py-10
     }
 
     .shopCard {
@@ -132,7 +132,7 @@ body {
     }
 
     p.cardTitle {
-        @apply  font-sans font-semibold text-shadow-sm text-[26px] text-base/7 py-3  tracking-tighter
+        @apply  font-sans font-semibold text-shadow-sm text-[26px] text-base/8 py-3  tracking-tighter
         
     }
 
@@ -154,7 +154,7 @@ body {
     @apply font-sans w-full overflow-hidden relative bg-[#f5f5f7] h-auto;
 
     .exploreContainer {
-        @apply max-w-7xl  mx-auto mt-25  px-15 max-md:px-25 max-md:mt-10 max-sm:px-10
+        @apply max-w-7xl  mx-auto mt-20  px-15 max-md:px-25 max-md:mt-0 max-sm:px-10 
     }
 
     .exploreLabel {
@@ -170,12 +170,16 @@ body {
     }
 
     .exploreContent {
-       @apply flex flex-row lg:bg-white rounded-3xl overflow-hidden mx-auto mt-20 mb-50  py-20 justify-center
+       @apply flex flex-row lg:bg-white rounded-3xl overflow-hidden mx-auto mt-20 mb-50  lg:py-30  justify-center 
 
     }
     
     .iPhone-group {
-        @apply text-center max-sm:text-left mx-1 w-fit
+        @apply md:text-center max-sm:text-left w-90 max-sm:w-50
+    }
+
+    .product-card {
+        /* @apply max-sm:mx-5  */
     }
 
     .image-wrapper {
@@ -183,11 +187,11 @@ body {
     }
 
     .image-wrapper img{
-        @apply max-sm:w-[200px] shrink-0 flex mx-auto max-md:w-[220px]
+        @apply max-sm:w-[170px] shrink-0 flex mx-auto max-md:w-[210px]
     }
 
     .colors {
-        @apply flex flex-row gap-2 justify-center py-8
+        @apply flex flex-row gap-1.5 md:justify-center py-9 max-sm:justify-baseline w-full px-10 max-sm:px-5
     }
 
     .color-swatches {
@@ -195,14 +199,92 @@ body {
     }
 
     .arrival {
-        @apply text-[#be5f1f] font-semibold text-shadow-xs text-xs capitalize
+        @apply text-[#be5f1f] font-semibold text-shadow-xs text-xs capitalize flex flex-col w-full px-10 max-sm:px-5
     }
 
     .product-info {
-        @apply flex flex-col w-fit;
+        @apply w-full flex flex-col px-10 max-md:w-[250px] max-sm:w-[200px] max-sm:px-5  md:items-center items-start;
 
         h3 {
-            @apply relative text-3xl py-3 font-semibold text-shadow-xs
+            @apply relative text-gray-800 max-lg:text-[27px] text-3xl py-3 font-semibold text-shadow-xs max-sm:text-[22px] max-md:text-2xl font-sans
+        }
+
+        p.motto {
+            @apply text-gray-800 text-shadow-xs text-[15px]
+        }
+
+        p.price {
+            @apply  py-3 text-[20px] font-semibold  text-gray-800 text-shadow-xs
+        }
+
+        span {
+            @apply relative  mt-11 font-sans font-normal text-lg text-slate-600 max-sm:text-[14px] max-md:text-[15px] text-shadow-xs
+        }
+
+        a.link-view {
+            @apply relative bg-blue-600 py-1.5 px-5 mt-8 rounded-3xl font-sans text-lg text-white max-sm:text-[14px] max-md:text-[15px] font-normal text-shadow-xs
+        }
+
+        a.buyBtn {
+            @apply relative flex flex-row justify-center items-center text-center mt-5 mb-2 font-sans font-normal text-lg text-blue-600 max-sm:text-[14px] max-md:text-[15px] text-shadow-xs hover:underline
+        }
+
+        a.buyBtn svg{
+            @apply relative top-0.5
+        }
+
+        
+    }
+
+    .slice {
+        @apply  border-t border-slate-300 w-2xs
+    }
+
+    .phoneDisplay {
+        @apply mt-12
+    }
+
+    .phoneDisplay h3 {
+        @apply relative text-gray-800 max-lg:text-[27px] text-3xl py-3 font-semibold text-shadow-xs max-sm:text-[22px] max-md:text-2xl font-sans
+    }
+
+    .phoneDisplay p {
+        @apply text-slate-600 font-sans text-xs text-shadow-2xs
+    }
+
+    .cameraDisplay {
+        @apply mt-12 flex flex-col justify-center items-center;
+
+        p {
+            @apply text-slate-600 font-sans text-xs text-shadow-2xs leading-7
+        }
+    }
+
+    .chip {
+        @apply mt-12 flex flex-col justify-center items-center;
+
+        p {
+            @apply text-slate-600 font-sans text-xs text-shadow-2xs leading-7
+        }
+    }
+
+    .battery {
+        @apply mt-12 flex flex-col justify-center items-center;
+
+        p {
+            @apply text-slate-600 font-sans text-xs text-shadow-2xs leading-7
+        }
+    }
+
+    .AI {
+        @apply mt-12 flex flex-col justify-center items-center;
+
+        label {
+            @apply text-slate-600 font-sans text-xs text-shadow-2xs leading-7
+        }
+
+        p {
+            @apply text-slate-600 font-sans text-xs text-shadow-2xs leading-4.5 mt-12 text-center
         }
     }
 

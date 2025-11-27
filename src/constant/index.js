@@ -1,7 +1,12 @@
 import { 
+    isAIicon,
+    isBatteryIcon,
+    isCameraIphoneAir,
+    isCameraIphonePro,
     isCard1, 
     isCard2, 
     isCard3, 
+    isChipIcon, 
     isIphone17Pro, 
     isIphoneAir 
 } from "../utils";
@@ -85,10 +90,15 @@ export const exploringIphone = [
                 motto : 'Innovative design for ultimate performance and battery life.',
                 colorVariant : ['#f77e2d','#32374a','#f5f5f5'], 
                 display : ['6.9″ or 6.3″', 'Super Retina XDR display5'],
-                camera : ['48MP Pro Fusion camera system','48MP Fusion Main','48MP Fusion Ultra Wide','48MP Fusion Telephoto'],
+                cameraIcon : isCameraIphonePro,
+                cameraText : ['48MP Pro Fusion camera system','48MP Fusion Main','48MP Fusion Ultra Wide','48MP Fusion Telephoto'],
+                chipIcon : isChipIcon,
                 chip : ['A19 Pro chip', '6‑core GPU with Neural Accelerators'],
+                batteryIcon : isBatteryIcon,
                 baterry : ['Up to 37 hours video playback10'],
-                ai : ['Built for Apple Intelligence1','The innovative design for iPhone 17 Pro delivers exceptional durability, breakthrough battery life, and unlocks the extraordinary power of the A19 Pro chip. The 48MP Pro Fusion camera system has the longest iPhone Telephoto ever with 8x optical-quality zoom, and the new Center Stage front camera for smarter group selfies and Dual Capture video. It has Ceramic Shield 2 on the front for 3x better scratch resistance, a 4x more crack-resistant Ceramic Shield back, and a forged aluminum unibody that dissipates heat. Helpful Apple Intelligence tools like Clean Up and more.']
+                ai_Icon : isAIicon,
+                ai_title : ['Built for Apple Intelligence1'],
+                ai_description : ['The innovative design for iPhone 17 Pro delivers exceptional durability, breakthrough battery life, and unlocks the extraordinary power of the A19 Pro chip. The 48MP Pro Fusion camera system has the longest iPhone Telephoto ever with 8x optical-quality zoom, and the new Center Stage front camera for smarter group selfies and Dual Capture video. It has Ceramic Shield 2 on the front for 3x better scratch resistance, a 4x more crack-resistant Ceramic Shield back, and a forged aluminum unibody that dissipates heat. Helpful Apple Intelligence tools like Clean Up and more.']
             }
         ],
         
@@ -104,10 +114,15 @@ export const exploringIphone = [
                 motto : 'The thinnest iPhone ever.With the power of pro inside.',
                 colorVariant : ['#f0f9ff','#fffcf5','#fcfcfc','#000000'], 
                 display : ['6.5″', 'Super Retina XDR display5'],
-                camera : ['48MP Fusion camera system','48MP Fusion Main','-','-'],
+                cameraIcon : isCameraIphoneAir,
+                cameraText : ['48MP Fusion camera system','48MP Fusion Main','--','--'],
+                chipIcon : isChipIcon,
                 chip : ['A19 Pro chip', '5‑core GPU with Neural Accelerators'],
+                batteryIcon : isBatteryIcon,
                 baterry : ['Up to 27 hours video playback10'],
-                ai : ['Built for Apple Intelligence1','iPhone Air is the thinnest iPhone ever, powered by the A19 Pro chip. It’s more durable than any previous iPhone, with a polished titanium frame, a 3x better scratch-resistant Ceramic Shield 2 front, and a 4x more crack-resistant Ceramic Shield back. Smarter group selfies and Dual Capture video with the new Center Stage front camera. The 48MP Fusion Main camera with 2x Telephoto supports the latest advanced features like next‑generation portraits and more. Immersive 6.5‑inch Super Retina XDR display with ProMotion up to 120Hz. All‑day battery life. Helpful Apple Intelligence tools like Clean Up and more.']
+                ai_Icon : isAIicon,
+                ai_title : ['Built for Apple Intelligence1'],
+                ai_description : ['iPhone Air is the thinnest iPhone ever, powered by the A19 Pro chip. It’s more durable than any previous iPhone, with a polished titanium frame, a 3x better scratch-resistant Ceramic Shield 2 front, and a 4x more crack-resistant Ceramic Shield back. Smarter group selfies and Dual Capture video with the new Center Stage front camera. The 48MP Fusion Main camera with 2x Telephoto supports the latest advanced features like next‑generation portraits and more. Immersive 6.5‑inch Super Retina XDR display with ProMotion up to 120Hz. All‑day battery life. Helpful Apple Intelligence tools like Clean Up and more.']
             }
         ],
         
